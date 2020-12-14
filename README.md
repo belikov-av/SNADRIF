@@ -2,6 +2,14 @@
 
 SNADRIF (SNA DRIver Finder) is a Python 3.7 software package that predicts cancer driver genes from the TCGA PanCanAtlas SNA data and classifies them into oncogenes and tumor suppressors. Driver prediction is based on calculating the ratio of functional (hyperactivating or inactivating) SNAs to passenger SNAs, whereas driver classification is based on calculating the ratio of hyperactivating SNAs to inactivating SNAs. Bootstrapping is used to calculate statistical significance and Benjamini–Hochberg procedure is used to keep false discovery rate under 5%. The pipeline can be executed fully automatically in less than two hours.
 
+This package has been developed by 
+
+Aleksey V. Belikov, Dr.rer.nat. | Danila V. Otnykov
+-- | --
+https://github.com/belikov-av | https://github.com/dan-otn 
+Laboratory of Innovative Medicine, School of Biological and Medical Physics, Moscow Institute of Physics and Technology | Department of bioinformatics, School of Biological and Medical Physics, Moscow Institute of Physics and Technology
+concept, pipeline, supervision | programming
+
 Pipeline overview
 
 First, the SNA file and the sample quality file are downloaded from https://gdc.cancer.gov/about-data/publications/PanCan-CellOfOrigin.
