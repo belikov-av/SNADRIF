@@ -7,6 +7,30 @@ Pipeline overview
 First, the SNA file and the sample quality file are downloaded from https://gdc.cancer.gov/about-data/publications/PanCan-CellOfOrigin.
 Next, low quality samples and metastatic samples are filtered out. 
 Then, SNAs are classified into likely hyperactivating, likely inactivating, likely passenger and unclear. 
+
+Variant_Classification | Possible effect
+-- | --
+De_novo_Start_InFrame | hyperactivating
+De_novo_Start_OutOfFrame | passenger
+Frame_Shift_Del | inactivating
+Frame_Shift_Ins | inactivating
+IGR | unclear
+In_Frame_Del | hyperactivating
+In_Frame_Ins | hyperactivating
+Intron | unclear
+Missense_Mutation | hyperactivating
+Nonsense_Mutation | inactivating
+Nonstop_Mutation | inactivating
+RNA | unclear
+Silent | passenger
+Splice_Site | unclear
+Targeted_Region | unclear
+Translation_Start_Site | inactivating
+3'Flank | unclear
+3'UTR | unclear
+5'Flank | unclear
+5'UTR | unclear
+
 The number of SNAs of each type is counted for each gene, and two indices are calculated: 
 
 a)	NSEI - Nonsynonymous SNA Enrichment Index 
